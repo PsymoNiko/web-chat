@@ -4,12 +4,13 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .models import RoomMember
 
+import time
 import json
+import random
 
 from agora_token_builder import RtcTokenBuilder
 
-import random
-import time
+
 
 
 def getToken(request):
